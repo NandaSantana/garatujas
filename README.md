@@ -27,3 +27,5 @@ Bun.serve: Sobe um servidor HTTP real na porta 3000. Toda requisição que chega
 const startIndex = (page - 1) * limit e itemsData.slice(startIndex, endIndex): calcula qual fatia do array mostrar. Também devolve totalPages, hasNextPage e hasPrevPage pra quem consome a API saber navegar.
 
 Cada bloco de rota tem seu próprio try/catch, então um erro no DELETE não derruba o servidor inteiro nem interfere nas outras rotas.
+
+Escrevi tudo que eu esquecia a função, em grande maioria.
