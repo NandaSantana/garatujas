@@ -1,3 +1,5 @@
+//core.ts:
+
 // Caminho do arquivo onde os dados são salvos
 const jsonFilePath = __dirname + '/data.temp.json';
 
@@ -56,6 +58,7 @@ export default { addItem, getItems, updateItem, removeItem };
 
 
 
+//apiturma2:
 
 
 
@@ -162,7 +165,6 @@ const server = Bun.serve({
         return new Response(`Recurso com id ${id} deletado`, { status: 200 });
       }
     }
-    // FIM DO EXEMPLO BÁSICO
 
   },
 
