@@ -56,8 +56,6 @@ export default { addItem, getItems, updateItem, removeItem };
 
 
 
-
-
 //apiturma2:
 
 
@@ -69,7 +67,6 @@ import todo from "./core.ts";
 const server = Bun.serve({
   port: 3000,
   routes: {
-
     // Rota raiz — serve o HTML da página
     "/": new Response(Bun.file("./public/index.html")),
 
