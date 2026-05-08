@@ -1,5 +1,6 @@
 //core.ts:
 
+````
 // Caminho do arquivo onde os dados são salvos
 const jsonFilePath = __dirname + '/data.temp.json';
 
@@ -52,18 +53,19 @@ async function removeItem(index: number) {
 
 // Exporta as funções para serem usadas em outros arquivos
 export default { addItem, getItems, updateItem, removeItem };
-
+````
 
 //apiturma2:
 
 
+````
 import todo from "./core.ts";
 
 // Cria e inicia o servidor na porta 3000
 const server = Bun.serve({
   port: 3000,
   routes: {
-
+  
     // Rota raiz — serve o HTML da página
     "/": new Response(Bun.file("./public/index.html")),
 
@@ -82,8 +84,8 @@ const server = Bun.serve({
           return Response.json('Por favor, forneça um item para adicionar.', { status: 400 });
         await todo.addItem(item);
         return Response.json(data);
-      },
-    },
+   },
+  },
 
     // Rotas que recebem um index na URL (ex: /api/todo/2)
     "/api/todo/:index": {
